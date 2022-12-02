@@ -5,10 +5,10 @@ with open("data/calories.txt", "r") as f:
     data = f.read().split("\n\n")
 
     # Split string into line item list
-    data = [[int(item) for item in php4.splitlines()] for php4 in data]
+    data = [[int(item) for item in inputlist.splitlines()] for inputlist in data]
 
     # Quick maths
-    data = [sum(php4) for php4 in data]
+    data = [sum(inputlist) for inputlist in data]
 
     # Sort list
     data = sorted(data)
